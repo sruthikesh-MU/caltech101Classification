@@ -3,6 +3,7 @@ Caltech 101 dataset classification using neural networks and image preprocessing
 
 Language: Matlab
 
+Download the dataset into 101_Categories folder here.
 
 References: 
 1. http://www.vision.caltech.edu/Image_Datasets/Caltech101/ 
