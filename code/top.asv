@@ -1,0 +1,25 @@
+function top
+
+% Get the list of categories
+listing = dir('101_Objectcategories');
+categories = extractfield(listing, 'name');
+categories = categories(3:end);
+
+% Read the image dataset
+X = []; % All the images
+y = [];   % Labeled images
+for i = 1:length(categories)
+    imgsCurrDir = extractfield(dir(strcat('101_Objectcategories/', categories(i), '/*.jpg')), 'name');
+    for j= 1:length(imgsCurrDir)
+        X(end) = imread(strcat('101_Objectcategories/', categories(i), '/', imgsCurrDir(j)));
+        y()
+    end
+end
+
+% Background subtraction
+
+
+% Train the network - Forward & Backward pass
+
+
+% Validate the network - Forward pass
